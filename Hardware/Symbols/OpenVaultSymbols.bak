@@ -65,7 +65,7 @@
 		(symbol "FPC24_1_1"
 			(rectangle
 				(start -1.27 -1.27)
-				(end 16.51 -62.23)
+				(end 10.16 -62.23)
 				(stroke
 					(width 0.254)
 					(type default)
