@@ -7300,6 +7300,18 @@
 		(uuid "ba5ba0ee-6060-4f0a-8b5c-9f3086cd6423")
 	)
 	(rectangle
+		(start 372.11 12.7)
+		(end 406.4 50.8)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c01d60b7-cee5-4c3b-ae26-09b48c2a987d")
+	)
+	(rectangle
 		(start 12.7 12.7)
 		(end 85.09 68.58)
 		(stroke
@@ -10152,6 +10164,30 @@
 			)
 		)
 	)
+	(global_label "TC_"
+		(shape bidirectional)
+		(at 382.27 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right)
+		)
+		(uuid "1b81a53d-3f5f-4efb-8a15-c5b0b2c644c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 377.159 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "NPM_GPIO0"
 		(shape output)
 		(at 48.26 111.76 180)
@@ -10296,6 +10332,54 @@
 			)
 		)
 	)
+	(global_label "TC_"
+		(shape bidirectional)
+		(at 382.27 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right)
+		)
+		(uuid "95998948-4a6d-4538-9eff-883c5da2fcd1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 377.159 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "TC_"
+		(shape bidirectional)
+		(at 394.97 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left)
+		)
+		(uuid "9bed231b-1283-474d-b699-f0dda4207c9a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 400.081 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "P_USBD-"
 		(shape output)
 		(at 69.85 55.88 0)
@@ -10341,6 +10425,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "TC_"
+		(shape bidirectional)
+		(at 394.97 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left)
+		)
+		(uuid "aa9f1db3-edc7-478f-9305-b8959bcbe4ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 400.081 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -10440,6 +10548,30 @@
 			)
 		)
 	)
+	(global_label "TC_"
+		(shape bidirectional)
+		(at 394.97 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left)
+		)
+		(uuid "cbcc2b2f-10dc-4d92-b48b-2599a0e889bf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 400.081 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "I2C1_SCL"
 		(shape bidirectional)
 		(at 327.66 35.56 180)
@@ -10453,6 +10585,30 @@
 		(uuid "d1a3711d-9047-4083-b0a1-27f57745e487")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 314.7945 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "TC_"
+		(shape bidirectional)
+		(at 382.27 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right)
+		)
+		(uuid "d4a48530-2685-4d64-ae45-a2259f650e8d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 377.159 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17747,7 +17903,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TC2030")
-		(at 246.38 172.72 0)
+		(at 387.35 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17758,27 +17914,29 @@
 		(fields_autoplaced yes)
 		(uuid "e58d2334-a30e-4e89-931d-65a191bfee10")
 		(property "Reference" "J5"
-			(at 247.65 160.02 0)
+			(at 387.3499 29.21 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "TC2030"
-			(at 247.65 162.56 0)
+			(at 389.8899 29.21 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
-			(at 247.65 172.72 0)
+			(at 388.62 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17789,7 +17947,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/2019/12/TC2030-IDC-NL-Datasheet-Rev-B.pdf"
-			(at 247.65 172.72 0)
+			(at 388.62 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17800,7 +17958,7 @@
 			)
 		)
 		(property "Description" "Tag-Connect’s 6-pins connector"
-			(at 246.38 172.72 0)
+			(at 387.35 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
