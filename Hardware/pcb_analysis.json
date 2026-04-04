@@ -1,0 +1,230 @@
+{
+  "file": "C:/Users/byte/Desktop/Nocta/Nocta-Hardware/Hardware/OpenVault.kicad_pcb",
+  "kicad_version": "10.0",
+  "file_version": "20260206",
+  "statistics": {
+    "footprint_count": 0,
+    "front_side": 0,
+    "back_side": 0,
+    "smd_count": 0,
+    "tht_count": 0,
+    "copper_layers_used": 0,
+    "copper_layer_names": [],
+    "track_segments": 0,
+    "via_count": 0,
+    "zone_count": 0,
+    "total_track_length_mm": 0,
+    "board_width_mm": null,
+    "board_height_mm": null,
+    "net_count": 0,
+    "routing_complete": true,
+    "unrouted_net_count": 0
+  },
+  "layers": [
+    {
+      "number": 0,
+      "name": "F.Cu",
+      "type": "signal",
+      "alias": null
+    },
+    {
+      "number": 2,
+      "name": "B.Cu",
+      "type": "signal",
+      "alias": null
+    },
+    {
+      "number": 9,
+      "name": "F.Adhes",
+      "type": "user",
+      "alias": "F.Adhesive"
+    },
+    {
+      "number": 11,
+      "name": "B.Adhes",
+      "type": "user",
+      "alias": "B.Adhesive"
+    },
+    {
+      "number": 13,
+      "name": "F.Paste",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 15,
+      "name": "B.Paste",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 5,
+      "name": "F.SilkS",
+      "type": "user",
+      "alias": "F.Silkscreen"
+    },
+    {
+      "number": 7,
+      "name": "B.SilkS",
+      "type": "user",
+      "alias": "B.Silkscreen"
+    },
+    {
+      "number": 1,
+      "name": "F.Mask",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 3,
+      "name": "B.Mask",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 17,
+      "name": "Dwgs.User",
+      "type": "user",
+      "alias": "User.Drawings"
+    },
+    {
+      "number": 19,
+      "name": "Cmts.User",
+      "type": "user",
+      "alias": "User.Comments"
+    },
+    {
+      "number": 21,
+      "name": "Eco1.User",
+      "type": "user",
+      "alias": "User.Eco1"
+    },
+    {
+      "number": 23,
+      "name": "Eco2.User",
+      "type": "user",
+      "alias": "User.Eco2"
+    },
+    {
+      "number": 25,
+      "name": "Edge.Cuts",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 27,
+      "name": "Margin",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 31,
+      "name": "F.CrtYd",
+      "type": "user",
+      "alias": "F.Courtyard"
+    },
+    {
+      "number": 29,
+      "name": "B.CrtYd",
+      "type": "user",
+      "alias": "B.Courtyard"
+    },
+    {
+      "number": 35,
+      "name": "F.Fab",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 33,
+      "name": "B.Fab",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 39,
+      "name": "User.1",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 41,
+      "name": "User.2",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 43,
+      "name": "User.3",
+      "type": "user",
+      "alias": null
+    },
+    {
+      "number": 45,
+      "name": "User.4",
+      "type": "user",
+      "alias": null
+    }
+  ],
+  "setup": {
+    "board_thickness_mm": 1.6,
+    "pad_to_mask_clearance": 0.0,
+    "legacy_teardrops": "no",
+    "allow_soldermask_bridges": "no"
+  },
+  "nets": {},
+  "board_outline": {
+    "edge_count": 0,
+    "edges": [],
+    "bounding_box": null
+  },
+  "component_groups": {},
+  "footprints": [],
+  "tracks": {
+    "segment_count": 0,
+    "arc_count": 0,
+    "width_distribution": {},
+    "layer_distribution": {}
+  },
+  "vias": {
+    "count": 0,
+    "size_distribution": {}
+  },
+  "zones": [],
+  "connectivity": {
+    "total_nets_with_pads": 0,
+    "routed_nets": 0,
+    "unrouted_count": 0,
+    "routing_complete": true,
+    "unrouted": []
+  },
+  "net_lengths": [],
+  "silkscreen": {
+    "board_text_count": 0,
+    "refs_visible_on_silk": 0,
+    "refs_hidden_on_silk": 0,
+    "documentation_warnings": [
+      {
+        "type": "missing_board_name",
+        "severity": "suggestion",
+        "message": "No board name or project identifier found in silkscreen text. Consider adding the board name for easy identification."
+      },
+      {
+        "type": "missing_revision",
+        "severity": "warning",
+        "message": "No revision marking found in silkscreen. Add a revision label (e.g., 'Rev A', 'V1.0') to track board versions."
+      }
+    ]
+  },
+  "board_metadata": {
+    "paper": "A4"
+  },
+  "dfm": {
+    "dfm_tier": "standard",
+    "metrics": {},
+    "violation_count": 0
+  },
+  "copper_presence": {
+    "warning": "No filled polygon data \u2014 zones may not have been filled. Run Edit \u2192 Fill All Zones (B) in KiCad and re-save before analysis."
+  }
+}
