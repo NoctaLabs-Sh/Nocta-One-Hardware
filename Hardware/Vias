@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+"""
+update_vias.py — Bump all vias in a KiCad PCB up to a minimum drill/diameter.
+
+Default targets JLCPCB's standard (no Kelvin-test surcharge) rule:
+    drill (hole)     >= 0.20 mm
+    diameter (pad)   >= 0.45 mm
+
+USAGE
+-----
+1) Standalone (run with KiCad's bundled Python so `pcbnew` is importable):
+
+   Linux:    python3 update_vias.py board.kicad_pcb
+   macOS:    /Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3 update_vias.py board.kicad_pcb
+   Windows:  "C:\\Program Files\\KiCad\\<ver>\\bin\\python.exe" update_vias.py board.kicad_pcb
+
+   Optional flags:
+     --drill 0.3 --diameter 0.6      # use different minimums
+     --in-place                      # overwrite the file (default writes *.updated.kicad_pcb)
+
+2) From inside KiCad's PCB Editor (Tools → Scripting Console):
+
+       exec(open('/path/to/update_vias.py').read())
+       update_vias_in_open_board()           # uses defaults (0.2 / 0.45)
+       # or: update_vias_in_open_board(0.3, 0.6)
+
+   Then save the board normally (Ctrl+S).
+
+Tested with KiCad 7/8/9. Close the PCB in the editor before running the
+standalone version so it doesn't fight the editor's lock file.
+"""
+
+import sys
+import argparse
+
+try:
+    import pcbnew
+except ImportError:
+    sys.stderr.write(
+        "ERROR: `pcbnew` not found. Run this with KiCad's bundled Python, "
+        "or paste it into the PCB Editor's scripting console.\n"
+    )
+    sys.exit(1)
+
+
+MIN_DRILL_MM = 0.20    # minimum hole size
+MIN_DIAM_MM  = 0.45    # minimum via diameter (annular pad)
+
+
+def update_vias(board, min_drill_mm=MIN_DRILL_MM, min_diam_mm=MIN_DIAM_MM, verbose=True):
+    """Bump every via on `board` up to at least the given drill/diameter (mm)."""
+    min_drill = pcbnew.FromMM(min_drill_mm)
+    min_diam  = pcbnew.FromMM(min_diam_mm)
+
+    total = changed = 0
+
+    for item in board.GetTracks():
+        # GetTracks() also returns regular track segments; skip those.
+        if item.Type() != pcbnew.PCB_VIA_T:
+            continue
+        total += 1
+
+        old_drill = item.GetDrill()
+        old_diam  = item.GetWidth()
+        new_drill = max(old_drill, min_drill)
+        new_diam  = max(old_diam,  min_diam)
+
+        if new_drill != old_drill or new_diam != old_diam:
+            item.SetDrill(new_drill)
+            item.SetWidth(new_diam)
+            changed += 1
+            if verbose:
+                pos = item.GetPosition()
+                print(
+                    f"  via @ ({pcbnew.ToMM(pos.x):7.3f}, {pcbnew.ToMM(pos.y):7.3f}) mm  "
+                    f"drill {pcbnew.ToMM(old_drill):.3f} -> {pcbnew.ToMM(new_drill):.3f}  "
+                    f"diam {pcbnew.ToMM(old_diam):.3f} -> {pcbnew.ToMM(new_diam):.3f}"
+                )
+
+    if verbose:
+        print(f"\nUpdated {changed} of {total} vias "
+              f"(min drill {min_drill_mm} mm, min diameter {min_diam_mm} mm).")
+    return changed, total
+
+
+def update_vias_in_open_board(min_drill_mm=MIN_DRILL_MM, min_diam_mm=MIN_DIAM_MM):
+    """Convenience entry-point for KiCad's scripting console."""
+    board = pcbnew.GetBoard()
+    result = update_vias(board, min_drill_mm, min_diam_mm)
+    try:
+        pcbnew.Refresh()
+    except Exception:
+        pass
+    return result
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Bump all vias to a minimum drill/diameter.")
+    ap.add_argument("board", help="Path to .kicad_pcb file")
+    ap.add_argument("--drill",    type=float, default=MIN_DRILL_MM,
+                    help=f"Min hole size in mm (default {MIN_DRILL_MM})")
+    ap.add_argument("--diameter", type=float, default=MIN_DIAM_MM,
+                    help=f"Min via diameter in mm (default {MIN_DIAM_MM})")
+    ap.add_argument("--in-place", action="store_true",
+                    help="Overwrite the input file (default writes *.updated.kicad_pcb)")
+    args = ap.parse_args()
+
+    if args.diameter <= args.drill:
+        ap.error("--diameter must be greater than --drill (you need some annular ring)")
+
+    board = pcbnew.LoadBoard(args.board)
+    update_vias(board, args.drill, args.diameter)
+
+    out = args.board if args.in_place else args.board.replace(".kicad_pcb", ".updated.kicad_pcb")
+    pcbnew.SaveBoard(out, board)
+    print(f"Saved: {out}")
+
+
+if __name__ == "__main__":
+    main()
