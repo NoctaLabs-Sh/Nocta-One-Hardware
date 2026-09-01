@@ -18,3 +18,6 @@ desktop.ini
 *.swp
 *.swo
 *~
+
+# Local history (editor plugin)
+.history/
