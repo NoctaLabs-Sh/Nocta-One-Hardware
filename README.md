@@ -28,7 +28,6 @@ Built by [Nocta Labs](https://noctalabs.sh), Leuven, Belgium.
 - **The enclosure.** No named enclosure model is published yet.
 - **Photographs.** Coming with the next write-up.
 
-We would rather say what is missing than let you go looking for it.
 
 ## Licence
 
