@@ -21,3 +21,9 @@ desktop.ini
 
 # Local history (editor plugin)
 .history/
+
+# Editor and agent config, kept out of the published repo
+CLAUDE.md
+AGENTS.md
+.claude/
+.cursor/
