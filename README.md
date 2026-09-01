@@ -44,8 +44,7 @@ under `Hardware/production/` are what actually went to the board house.
 ## Telling us we are wrong
 
 Open an issue. A mistake found in the schematic now is worth more to us than
-a compliment later, and the most useful thing you can send is a specific one:
-a part, a net, a footprint, a page number.
+a compliment later :)
 
 For anything sensitive, mail hello@noctalabs.sh first and we will credit you
 publicly once it is fixed.
