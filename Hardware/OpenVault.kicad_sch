@@ -11,7 +11,7 @@
 		(company "TBD")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Socket"
+		(symbol "Connector:Conn_01x03_Socket"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -22,7 +22,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -31,7 +31,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Socket"
+			(property "Value" "Conn_01x03_Socket"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -63,7 +63,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -106,7 +106,19 @@
 					)
 				)
 			)
-			(symbol "Conn_01x02_Socket_1_1"
+			(symbol "Conn_01x03_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -0.508 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy -1.27 0) (xy -0.508 0)
@@ -123,6 +135,18 @@
 					(pts
 						(xy -1.27 -2.54) (xy -0.508 -2.54)
 					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -156,7 +180,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -174,7 +198,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -184,6 +208,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1767,279 +1809,6 @@
 				)
 			)
 			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Thermistor_NTC"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TH"
-				(at -4.445 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Thermistor_NTC"
-				(at 3.175 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Temperature dependent resistor, negative temperature coefficient"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "thermistor NTC resistor sensor RTD"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Thermistor_NTC_0_1"
-				(arc
-					(start -3.175 2.413)
-					(mid -3.0506 2.3165)
-					(end -3.048 2.159)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.048 2.794)
-					(mid -2.9736 2.9736)
-					(end -2.794 3.048)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.794 3.048)
-					(mid -2.6144 2.9736)
-					(end -2.54 2.794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.794 2.54)
-					(mid -2.9736 2.6144)
-					(end -3.048 2.794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.794 1.905)
-					(mid -2.9736 1.9794)
-					(end -3.048 2.159)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.54 2.159)
-					(mid -2.6144 1.9794)
-					(end -2.794 1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.159 2.794)
-					(mid -2.434 2.5608)
-					(end -2.794 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.159) (xy -2.54 2.794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -3.683) (xy -2.54 -1.397) (xy -2.794 -2.159) (xy -2.286 -2.159) (xy -2.54 -1.397) (xy -2.54 -1.651)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.54) (xy -1.778 1.524) (xy 1.778 -1.524) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.397) (xy -1.778 -3.683) (xy -2.032 -2.921) (xy -1.524 -2.921) (xy -1.778 -3.683)
-						(xy -1.778 -3.429)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.016 2.54)
-					(end 1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Thermistor_NTC_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -8152,6 +7921,18 @@
 		(uuid "c1130918-9e4e-4f57-9df5-42e4ec767959")
 	)
 	(rectangle
+		(start 12.7 181.5274)
+		(end 147.9842 222.25)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c907c75c-3e25-491f-baa7-0ee228436a72")
+	)
+	(rectangle
 		(start 12.7 69.85)
 		(end 147.955 180.34)
 		(stroke
@@ -8257,6 +8038,20 @@
 			(justify left bottom)
 		)
 		(uuid "615334db-4299-4644-b22b-b013cecffa7f")
+	)
+	(text "POWER BUTTON\n"
+		(exclude_from_sim no)
+		(at 12.7 222.25 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "8effba4d-73f2-4f0b-b8c6-9416cc09a06f")
 	)
 	(text "USB TYPE C"
 		(exclude_from_sim no)
@@ -8469,12 +8264,6 @@
 		(uuid "5fee49b5-8b79-44f7-8638-28951da21660")
 	)
 	(junction
-		(at 114.3 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6440aa37-72d0-4e26-af75-3aecec47f9a7")
-	)
-	(junction
 		(at 99.06 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8625,6 +8414,12 @@
 		(uuid "c80fe553-8620-4483-acaa-a90442c5fc38")
 	)
 	(junction
+		(at 35.56 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc8f8ec8-b384-4082-9f66-1d14b7f5ea3a")
+	)
+	(junction
 		(at 99.06 194.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8689,6 +8484,10 @@
 	(no_connect
 		(at 171.45 106.68)
 		(uuid "13f66ac2-8d18-4efe-b2ad-6dd1c095d927")
+	)
+	(no_connect
+		(at 96.52 110.49)
+		(uuid "1465ff96-f075-4e5a-86f0-90781571714f")
 	)
 	(no_connect
 		(at 171.45 88.9)
@@ -8964,16 +8763,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 31.75) (xy 114.3 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02878711-0af1-4ba1-9655-3ba79339ce19")
-	)
-	(wire
-		(pts
 			(xy 327.66 27.94) (xy 330.2 27.94)
 		)
 		(stroke
@@ -9011,6 +8800,16 @@
 			(type default)
 		)
 		(uuid "0721af77-4a9b-42d4-824f-60a3cbcff34a")
+	)
+	(wire
+		(pts
+			(xy 35.56 104.14) (xy 50.8 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08923fb5-4a05-4500-a111-3b026c949971")
 	)
 	(wire
 		(pts
@@ -9484,16 +9283,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 104.14) (xy 48.26 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "346123de-1675-470d-8eab-396334d57bb7")
-	)
-	(wire
-		(pts
 			(xy 186.69 157.48) (xy 186.69 161.29)
 		)
 		(stroke
@@ -9821,16 +9610,6 @@
 			(type default)
 		)
 		(uuid "5076646c-47f4-4ba9-9cf1-bd2cc3dce88f")
-	)
-	(wire
-		(pts
-			(xy 99.06 109.22) (xy 99.06 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51018c8a-01d1-41eb-ab0e-5d818dd20fb9")
 	)
 	(wire
 		(pts
@@ -10474,16 +10253,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 31.75) (xy 118.11 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8542fb51-f668-4f19-b457-f230c8ffb09b")
-	)
-	(wire
-		(pts
 			(xy 96.52 134.62) (xy 104.14 134.62)
 		)
 		(stroke
@@ -11074,6 +10843,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 31.75) (xy 118.11 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd7b8ad0-2aef-45d6-9fc4-689fcfaf9c5b")
+	)
+	(wire
+		(pts
 			(xy 312.42 115.57) (xy 316.23 115.57)
 		)
 		(stroke
@@ -11291,16 +11070,6 @@
 			(type default)
 		)
 		(uuid "ced6dee4-bf44-45c0-aa93-cfa92b7dd96d")
-	)
-	(wire
-		(pts
-			(xy 125.73 31.75) (xy 128.27 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cffa141b-8957-4116-b5f0-12f41a18e1a9")
 	)
 	(wire
 		(pts
@@ -11564,6 +11333,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 34.29) (xy 118.11 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5ce2309-421a-45d1-b9fc-fc6dcd16ac29")
+	)
+	(wire
+		(pts
 			(xy 184.15 161.29) (xy 184.15 163.83)
 		)
 		(stroke
@@ -11724,16 +11503,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 31.75) (xy 114.3 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3ddb6ce-48f1-48c7-a124-2bf029f7f45b")
-	)
-	(wire
-		(pts
 			(xy 125.73 194.31) (xy 125.73 196.85)
 		)
 		(stroke
@@ -11851,16 +11620,6 @@
 			(type default)
 		)
 		(uuid "fd669077-8cb7-4512-885f-53f39aee87f6")
-	)
-	(wire
-		(pts
-			(xy 96.52 110.49) (xy 99.06 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff14fbce-c1e9-48fa-9358-943ea44662b5")
 	)
 	(label "RESE_INK"
 		(at 265.43 93.98 270)
@@ -12730,7 +12489,7 @@
 	)
 	(global_label "NTC"
 		(shape output)
-		(at 128.27 31.75 0)
+		(at 118.11 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12740,7 +12499,7 @@
 		)
 		(uuid "ab9f75fd-b4af-456e-b973-9df8a113c58f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.8233 31.75 0)
+			(at 124.6633 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13363,7 +13122,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00b54616-ce48-4981-a57c-4c1c2c8b7262")
-		(property "Reference" "R3"
+		(property "Reference" "R8"
 			(at 266.7 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13438,7 +13197,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "R3")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -13455,7 +13214,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00fc655a-79ef-4ebf-8cbb-8723aebdffdc")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR047"
 			(at 255.27 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -13515,7 +13274,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR051")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -13532,7 +13291,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "020ee3f0-1ddb-491e-8626-954f6c400049")
-		(property "Reference" "C20"
+		(property "Reference" "C27"
 			(at 320.04 104.394 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13607,7 +13366,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C20")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -13624,7 +13383,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "05e55a37-ecec-4cfb-81d9-f58bc3985259")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR033"
 			(at 124.46 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -13684,7 +13443,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR023")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -13701,7 +13460,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "07968357-792c-4b8d-b4b1-ff2d1fc421e5")
-		(property "Reference" "C28"
+		(property "Reference" "C6"
 			(at 112.776 195.834 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13776,7 +13535,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C28")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -13794,7 +13553,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09ee0586-999e-4739-b873-beb272bef594")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR04"
 			(at 31.75 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -13854,7 +13613,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR064")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -13871,7 +13630,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0a48d173-b515-44f4-b8b6-24e1f9f4fbe5")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR053"
 			(at 278.13 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -13931,7 +13690,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR035")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -13948,7 +13707,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0acabc41-91b1-4f26-9306-0520ea1e8460")
-		(property "Reference" "C3"
+		(property "Reference" "C5"
 			(at 105.156 100.838 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14023,7 +13782,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C3")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -14040,7 +13799,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0da71109-a6b9-4922-8b20-e2038e43c9ac")
-		(property "Reference" "C22"
+		(property "Reference" "C25"
 			(at 318.77 112.014 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14115,7 +13874,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C22")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -14132,7 +13891,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0f1af128-8e48-42d4-84db-1035f5b4e523")
-		(property "Reference" "TP3"
+		(property "Reference" "TP5"
 			(at 382.27 66.294 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14194,7 +13953,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "TP3")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -14211,7 +13970,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0f71a4f8-e252-4349-938b-46519e0bec0c")
-		(property "Reference" "C18"
+		(property "Reference" "C28"
 			(at 325.12 99.314 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14286,7 +14045,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C18")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -14303,7 +14062,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "10e5988e-37b8-4670-bfc3-68e605e08a64")
-		(property "Reference" "TP5"
+		(property "Reference" "TP7"
 			(at 394.97 66.294 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14365,7 +14124,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "TP5")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -14382,7 +14141,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "11cbf1fc-56f8-486a-a697-e4f3feec30d4")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR050"
 			(at 265.43 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -14442,7 +14201,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR049")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -14459,7 +14218,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1265a0d2-71f8-48ab-8dd0-98cca1af49e9")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR023"
 			(at 100.33 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -14519,7 +14278,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR015")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -14536,7 +14295,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "12ae7230-05eb-4f01-8710-cd2f35c8c8fb")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR041"
 			(at 212.09 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -14596,7 +14355,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR048")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -14613,7 +14372,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14b1560d-47ad-450f-b856-240b58aeb8e3")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR065"
 			(at 375.92 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -14673,7 +14432,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR058")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -14690,7 +14449,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1694325a-b5ee-463f-97e3-f84baa41541c")
-		(property "Reference" "R5"
+		(property "Reference" "R6"
 			(at 252.73 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14765,7 +14524,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "R5")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -14782,7 +14541,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1d21ccb5-2c92-4a4c-b9d3-03c5ab421b18")
-		(property "Reference" "C5"
+		(property "Reference" "C8"
 			(at 114.3 129.794 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14857,7 +14616,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C5")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -14874,7 +14633,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "207933a7-afbb-41d6-aa1b-bd24c0b7b5f9")
-		(property "Reference" "C15"
+		(property "Reference" "C20"
 			(at 318.77 63.754 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14949,7 +14708,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C15")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -14966,7 +14725,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21c5a72c-fb2e-4fc9-8083-7a2a4f60aa8a")
-		(property "Reference" "TP4"
+		(property "Reference" "TP6"
 			(at 388.62 66.294 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15028,7 +14787,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "TP4")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -15135,7 +14894,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "28c0b755-9b7a-4482-8c58-61bcb26a1c7d")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR010"
 			(at 44.45 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -15195,7 +14954,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR06")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -15304,7 +15063,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2bade70d-fff7-40fc-a679-9622445e891c")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR035"
 			(at 129.54 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -15364,7 +15123,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR026")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -15381,7 +15140,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d1b25ef-deb7-444a-ac1b-121c4663a92a")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR045"
 			(at 245.11 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -15441,7 +15200,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR031")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -15458,7 +15217,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d22ee9d-3f1a-45a7-bae6-e200c3609b3e")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR038"
 			(at 163.83 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -15518,7 +15277,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR063")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -15535,7 +15294,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3053ba13-dd30-409f-af64-2a72b2ce911e")
-		(property "Reference" "C25"
+		(property "Reference" "C15"
 			(at 270.51 133.604 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15610,7 +15369,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C25")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -15627,7 +15386,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "333451e5-818f-4e99-999c-de52080a9218")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR048"
 			(at 265.43 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -15687,7 +15446,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR032")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -15704,7 +15463,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "33a0112d-ed9f-4f2a-9fe8-5b15fe42735d")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR040"
 			(at 208.28 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -15764,7 +15523,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR029")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -15781,7 +15540,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "34d3218e-1248-429a-be9f-d4d95e6644b1")
-		(property "Reference" "J03"
+		(property "Reference" "J04"
 			(at 341.63 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15921,98 +15680,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "J03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 104.14 31.75 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "358f733c-6d8f-47cb-87ad-2e05537f2b2f")
-		(property "Reference" "J2"
-			(at 104.775 24.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 104.775 26.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
-			(at 104.14 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 104.14 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C295747"
-			(at 104.14 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5319a889-ef8a-49a2-8751-1372f817bd6d")
-		)
-		(pin "2"
-			(uuid "6ad66adb-1bdf-4c31-ba34-19d27fb7a059")
-		)
-		(instances
-			(project "OpenVault"
-				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "J2")
+					(reference "J04")
 					(unit 1)
 				)
 			)
@@ -16029,7 +15697,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3697395f-8038-4a2b-8db8-146bf5354684")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR012"
 			(at 52.07 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -16089,7 +15757,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR07")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -16106,7 +15774,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "37d92dc1-2983-4f2c-abb0-37676c7df7a6")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR017"
 			(at 77.47 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -16166,7 +15834,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR012")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -16183,7 +15851,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3909eab6-b26b-48f1-9e74-a6eb04c5368a")
-		(property "Reference" "C6"
+		(property "Reference" "C9"
 			(at 120.65 20.574 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16258,7 +15926,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C6")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -16275,7 +15943,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "394a3ab7-68ba-491d-8a2a-fa30f9f122b5")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR054"
 			(at 279.4 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -16335,7 +16003,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR052")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -16352,7 +16020,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "39b17842-5af4-4a8c-8a9c-91efa6e764b5")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR08"
 			(at 41.91 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -16412,7 +16080,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR04")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -16430,7 +16098,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3dfca862-a24f-4e93-b208-9e480eb059e8")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG02"
 			(at 173.99 27.305 0)
 			(hide yes)
 			(show_name no)
@@ -16490,7 +16158,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#FLG01")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -16507,7 +16175,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ea32650-1a00-47bb-aed4-4e2cb7b6a8a0")
-		(property "Reference" "C21"
+		(property "Reference" "C24"
 			(at 318.77 109.474 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16582,7 +16250,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C21")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -16599,7 +16267,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ed8c3cb-6078-4072-a611-30bcf694408c")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR019"
 			(at 91.44 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -16659,7 +16327,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR072")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -16677,7 +16345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4077b7ee-4e2a-4aa6-a7c6-ec0f871194e3")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR022"
 			(at 99.06 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -16737,7 +16405,84 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR068")
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 35.56 104.14 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "41e3ec42-92bf-4944-ae09-782738a1eff8")
+		(property "Reference" "#FLG01"
+			(at 35.56 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 35.56 107.696 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 35.56 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98e18e11-fe02-4738-83bf-4c7736857cd9")
+		)
+		(instances
+			(project "OpenVault"
+				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -16754,7 +16499,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "47e6f583-991e-4972-b927-166201c563e8")
-		(property "Reference" "C14"
+		(property "Reference" "C19"
 			(at 286.766 77.978 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16829,7 +16574,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C14")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -16846,7 +16591,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a9711a9-a7e9-402d-83c9-7f5512213baf")
-		(property "Reference" "L3"
+		(property "Reference" "L1"
 			(at 84.074 195.58 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16921,84 +16666,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "L3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 99.06 109.22 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4ce405cd-086a-457d-92f4-6501c99180cd")
-		(property "Reference" "#PWR056"
-			(at 99.06 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VSYS"
-			(at 95.758 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 99.06 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 99.06 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fc05ab4e-c73b-4a8f-a975-ab5bbe7c010e")
-		)
-		(instances
-			(project "OpenVault"
-				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR056")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -17015,7 +16683,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4e0587de-1129-4ac8-9976-0e24a57d640e")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR071"
 			(at 401.32 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -17075,7 +16743,101 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR062")
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Socket")
+		(at 104.14 31.75 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e42e9de-2e6c-478b-bdf1-1ae18effbc99")
+		(property "Reference" "J2"
+			(at 104.775 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BATT_CON"
+			(at 104.775 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal"
+			(at 104.14 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 104.14 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C160403"
+			(at 104.14 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e8008fde-a1a6-4833-845d-2802023737a7")
+		)
+		(pin "1"
+			(uuid "e5ddceac-db38-4044-8b99-205a979f6aa6")
+		)
+		(pin "3"
+			(uuid "8f3e1f65-0fd6-471e-bda1-8f9670683679")
+		)
+		(instances
+			(project "OpenVault"
+				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -17092,7 +16854,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5132dbd7-2c79-4055-a57c-69c20f15cf79")
-		(property "Reference" "R7"
+		(property "Reference" "R5"
 			(at 217.17 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17167,7 +16929,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "R7")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -17185,7 +16947,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "518024f6-41e4-4e6a-a9b6-39d232125356")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR026"
 			(at 111.76 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -17245,7 +17007,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR069")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -17262,7 +17024,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5517f5d8-db1b-4ba1-9989-602109cc731b")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR059"
 			(at 293.37 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -17322,7 +17084,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR040")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -17339,7 +17101,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "561263d1-82b2-4e84-b1b2-37a7f12dc7ff")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR042"
 			(at 215.9 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -17399,7 +17161,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR054")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -17416,7 +17178,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59f7b9e2-a803-4839-8e0f-89b0a4c2ec56")
-		(property "Reference" "C23"
+		(property "Reference" "C26"
 			(at 318.77 114.554 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17491,7 +17253,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C23")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -17508,7 +17270,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5d3b1abd-84d5-45a5-9059-da133dd02ad7")
-		(property "Reference" "C24"
+		(property "Reference" "C12"
 			(at 211.836 149.098 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17583,7 +17345,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C24")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -17591,7 +17353,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.3 34.29 0)
+		(at 118.11 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17600,8 +17362,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5e8fe64a-51b5-416c-8126-c15b123b898a")
-		(property "Reference" "#PWR021"
-			(at 114.3 40.64 0)
+		(property "Reference" "#PWR031"
+			(at 118.11 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17612,7 +17374,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 37.846 0)
+			(at 118.11 37.846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17622,7 +17384,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 34.29 0)
+			(at 118.11 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17633,7 +17395,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 34.29 0)
+			(at 118.11 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17644,7 +17406,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 34.29 0)
+			(at 118.11 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17660,7 +17422,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR021")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -17677,7 +17439,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ec0bfcb-82ef-4525-8c86-692938f7c2c5")
-		(property "Reference" "R8"
+		(property "Reference" "R3"
 			(at 161.29 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17752,7 +17514,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "R8")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -17834,6 +17596,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2071859"
+			(at 66.04 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "0e6279b6-b360-4581-a4f3-3174968a8960")
 		)
@@ -17878,7 +17651,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "617b7a45-b062-40ca-83bc-7375fd734a2c")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR037"
 			(at 163.83 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -17938,7 +17711,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR027")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -17955,7 +17728,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "63c19344-cf52-4076-b195-c21f2d6a4bd7")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR014"
 			(at 63.5 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -18015,7 +17788,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR09")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -18032,7 +17805,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "647c7661-2e8e-4a2e-94f7-d62b8fb957ad")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR061"
 			(at 316.23 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -18092,7 +17865,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR045")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -18109,7 +17882,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "673f2180-6bb5-4924-bf2a-a872669c004d")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR029"
 			(at 114.3 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -18169,7 +17942,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR020")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -18186,7 +17959,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69d71605-196d-4c64-93d6-e5a455747fed")
-		(property "Reference" "R4"
+		(property "Reference" "R2"
 			(at 83.82 205.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18261,7 +18034,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "R4")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -18278,7 +18051,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6c306bfb-2aeb-45b5-b0c1-526e063cb46f")
-		(property "Reference" "C19"
+		(property "Reference" "C23"
 			(at 318.77 101.854 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18353,7 +18126,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C19")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -18370,7 +18143,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f148535-8579-4f2c-aa06-7cd2313972d1")
-		(property "Reference" "C8"
+		(property "Reference" "C11"
 			(at 164.846 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18445,7 +18218,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C8")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -18553,7 +18326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70714531-5f8b-4803-8392-0776df23a747")
-		(property "Reference" "SW2"
+		(property "Reference" "SW1"
 			(at 113.03 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18606,17 +18379,6 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C115361"
-			(at 113.03 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "LCSC" "C115361"
 			(at 113.03 50.8 0)
 			(hide yes)
@@ -18643,7 +18405,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "SW2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -18660,7 +18422,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "71c14750-7895-4305-b961-79fa1daf0487")
-		(property "Reference" "C17"
+		(property "Reference" "C22"
 			(at 318.77 94.234 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18735,7 +18497,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C17")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -18752,7 +18514,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "71efe9c7-446a-4fca-b1ee-9dbd645246e7")
-		(property "Reference" "C26"
+		(property "Reference" "C1"
 			(at 39.624 200.152 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18827,7 +18589,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C26")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -18844,7 +18606,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "72791a0b-847a-4411-9382-c436f088b9f0")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR030"
 			(at 114.3 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -18904,7 +18666,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR022")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -19057,7 +18819,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "74154c14-985a-4196-9859-f283feda838f")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR063"
 			(at 312.42 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -19117,7 +18879,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR042")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -19134,7 +18896,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "782964ef-250f-4e5d-a779-7245609ce411")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR055"
 			(at 283.21 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -19194,7 +18956,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR036")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -19211,7 +18973,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78f8b240-60d4-464a-abf9-f702a31e0fc7")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR057"
 			(at 293.37 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -19271,7 +19033,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR038")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -19288,7 +19050,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "79e0c8ef-edd7-48ba-a2a4-1aafa6579b33")
-		(property "Reference" "C13"
+		(property "Reference" "C18"
 			(at 283.21 34.544 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19363,97 +19125,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Thermistor_NTC")
-		(at 121.92 31.75 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7ac95d49-604e-47f1-aeb3-65e20ab5fd99")
-		(property "Reference" "TH1"
-			(at 121.92 28.702 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NTC 10K"
-			(at 121.92 36.322 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 120.65 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 121.92 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C77131"
-			(at 121.92 31.75 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "8386ea79-9e14-4479-9462-9573a3a51a2c")
-		)
-		(pin "1"
-			(uuid "f786cab5-288a-439c-b75d-486eb43e99a1")
-		)
-		(instances
-			(project "OpenVault"
-				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "TH1")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -19470,7 +19142,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7dee95f5-0ad2-4e7c-8277-cdf7a27edd2e")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR028"
 			(at 113.03 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -19530,7 +19202,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR019")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -19547,7 +19219,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e9a9a62-9111-4940-a09c-b13a52e419b2")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR052"
 			(at 278.13 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -19607,7 +19279,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR034")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -19702,7 +19374,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82054751-2d08-41d2-991b-af80af3fe2fc")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR07"
 			(at 39.37 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -19762,7 +19434,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR017")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -19770,7 +19442,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 48.26 104.14 90)
+		(at 35.56 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19779,8 +19451,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83419ff8-e0a9-4c85-a1b9-c39e24ef10ed")
-		(property "Reference" "#PWR08"
-			(at 52.07 104.14 0)
+		(property "Reference" "#PWR05"
+			(at 35.56 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19791,7 +19463,7 @@
 			)
 		)
 		(property "Value" "VBAT"
-			(at 42.672 104.14 90)
+			(at 35.56 98.552 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19801,7 +19473,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 104.14 0)
+			(at 35.56 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19812,7 +19484,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 104.14 0)
+			(at 35.56 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19823,7 +19495,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 48.26 104.14 0)
+			(at 35.56 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19839,7 +19511,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR08")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -19856,7 +19528,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8404f90b-5dfe-4efb-bc7c-d4a1a65ea681")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR013"
 			(at 54.61 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -19916,7 +19588,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR067")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -19933,7 +19605,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "875d7818-1677-4522-80ac-d65dbbde71cb")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR046"
 			(at 251.46 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -19993,7 +19665,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR053")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -20010,7 +19682,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8976876b-271b-420c-afa4-fb9769cd41ea")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR067"
 			(at 381 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -20070,7 +19742,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR046")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -20087,7 +19759,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bcac05f-1c19-4bd5-bee4-fcbb9429e774")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR034"
 			(at 125.73 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -20147,7 +19819,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR071")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -20164,7 +19836,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8cd07bf0-e81e-41e7-8f9c-1d227ec1a08f")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR024"
 			(at 100.33 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -20224,7 +19896,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR016")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -20241,7 +19913,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8d67da9f-fcd7-4f54-9288-debf7338530e")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 41.91 160.274 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20316,7 +19988,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -20333,7 +20005,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8e406169-7f06-4b37-a2ed-661c2f8de87e")
-		(property "Reference" "R6"
+		(property "Reference" "R4"
 			(at 217.17 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20408,7 +20080,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "R6")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -20425,7 +20097,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9436c241-00ff-418e-8820-f8da58cd31d2")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR049"
 			(at 265.43 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -20485,7 +20157,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR050")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -20579,7 +20251,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "957c8dd5-296d-42ad-8421-dcd28115403a")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR016"
 			(at 77.47 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -20639,7 +20311,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR011")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -20733,7 +20405,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "991f25d0-8eb4-4bbf-9aae-d09df342b677")
-		(property "Reference" "C12"
+		(property "Reference" "C17"
 			(at 283.21 26.924 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20808,7 +20480,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C12")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -20826,7 +20498,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99d6f828-99f1-43e1-a130-950984f20544")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR011"
 			(at 44.45 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -20886,7 +20558,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR065")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -20903,7 +20575,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9aa08b7b-8067-469e-a537-1bb135e5515b")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR036"
 			(at 157.48 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -20963,7 +20635,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR057")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -20980,7 +20652,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9ad53bae-251e-4c14-81cb-83afb054e543")
-		(property "Reference" "C10"
+		(property "Reference" "C14"
 			(at 265.176 66.548 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21055,7 +20727,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C10")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -21072,7 +20744,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9b7f1a99-3179-4844-9a73-185f51b5ba42")
-		(property "Reference" "C2"
+		(property "Reference" "C3"
 			(at 77.216 23.368 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21147,7 +20819,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C2")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -21164,7 +20836,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9d3bc1e0-2af1-48d1-a528-d4950e89a16d")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR044"
 			(at 238.76 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -21224,7 +20896,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR030")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -21241,7 +20913,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9e765500-e94b-4948-b8a0-116759b31eb5")
-		(property "Reference" "L1"
+		(property "Reference" "L2"
 			(at 105.41 129.5399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21316,7 +20988,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "L1")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -21333,7 +21005,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a0533f93-b091-471d-b67c-9684691d6c38")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR027"
 			(at 113.03 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -21393,7 +21065,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR018")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -21410,7 +21082,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a447ad15-6f85-4b3f-b295-fd87d0f89017")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR015"
 			(at 63.5 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -21470,7 +21142,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR010")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -21487,7 +21159,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa408a8e-6575-45cd-8a6d-5112d48c8bcf")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR020"
 			(at 97.79 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -21547,7 +21219,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR013")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -21564,7 +21236,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa55fd4d-2275-4341-a3a3-21562670bbee")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR069"
 			(at 388.62 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -21624,7 +21296,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR061")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -21641,7 +21313,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa647d22-6be9-4e55-a287-880abc0d7ff9")
-		(property "Reference" "TP8"
+		(property "Reference" "TP4"
 			(at 376.682 77.724 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21703,7 +21375,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "TP8")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -21720,7 +21392,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ac820fea-3059-44d9-a280-f76d1d614b2f")
-		(property "Reference" "L2"
+		(property "Reference" "L3"
 			(at 251.46 75.184 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21795,7 +21467,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "L2")
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -22289,7 +21961,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0969a94-5dde-4b17-a5be-c717255f0a5a")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR068"
 			(at 382.27 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -22349,7 +22021,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR059")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -22366,7 +22038,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b2f76f70-1b14-4dea-ae5a-ec3771031157")
-		(property "Reference" "TP7"
+		(property "Reference" "TP3"
 			(at 376.174 70.866 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22428,7 +22100,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "TP7")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -22524,7 +22196,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b3b2cdb9-da31-4a50-bdc5-072e8913daa8")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR043"
 			(at 215.9 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -22584,7 +22256,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR055")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -22601,7 +22273,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b44d7433-742c-4c02-9655-ee3b87fd0a43")
-		(property "Reference" "TP6"
+		(property "Reference" "TP8"
 			(at 401.32 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22663,7 +22335,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "TP6")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -22770,7 +22442,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b7dcc03c-3618-4888-bf01-43bf7df72d95")
-		(property "Reference" "C7"
+		(property "Reference" "C10"
 			(at 121.666 100.838 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22845,7 +22517,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C7")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -22969,7 +22641,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b8964d8d-366d-4200-9c0d-0561bdd7da0b")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR056"
 			(at 287.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -23029,7 +22701,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR037")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -23046,7 +22718,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bdae56e3-d9fa-4ceb-8e85-3d021395bb81")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR060"
 			(at 311.15 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -23106,7 +22778,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR044")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -23123,7 +22795,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "becb8e3d-2a9b-4361-983a-ae47fe2254b0")
-		(property "Reference" "R2"
+		(property "Reference" "R7"
 			(at 257.81 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23198,7 +22870,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "R2")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -23215,7 +22887,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c1240989-4a9f-46af-aadf-bc3c9ee12996")
-		(property "Reference" "C9"
+		(property "Reference" "C13"
 			(at 244.856 79.248 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23290,7 +22962,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C9")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -23407,7 +23079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4a856c6-c7a7-4868-b054-96f76e6c39dc")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG03"
 			(at 182.245 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -23468,7 +23140,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#FLG02")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -23485,7 +23157,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c6160159-915c-457c-971c-6891bc6352c1")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR06"
 			(at 40.64 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -23545,7 +23217,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR066")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -23562,7 +23234,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cbe5ea42-7340-46df-a8d5-9eb44d7d7a1d")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR021"
 			(at 99.06 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -23622,7 +23294,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR014")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -23639,7 +23311,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d29c7e31-a7c8-43e6-bd56-38e5cd7a9765")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR018"
 			(at 82.55 218.44 0)
 			(hide yes)
 			(show_name no)
@@ -23699,7 +23371,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR070")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -23716,7 +23388,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d2f31342-5ba0-4725-acb0-524cc4230d99")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR062"
 			(at 312.42 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -23776,7 +23448,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR041")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -23793,7 +23465,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d82bb076-29e4-4f1d-8c93-919227f0aa89")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR064"
 			(at 328.93 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -23853,7 +23525,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR043")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -23870,7 +23542,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "da7d8242-8545-447e-ba80-781944b1554f")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR066"
 			(at 381 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -23930,7 +23602,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR047")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -23947,7 +23619,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dabe53d1-8a2d-46d4-b135-429afb096575")
-		(property "Reference" "J4"
+		(property "Reference" "J3"
 			(at 336.296 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24033,7 +23705,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -24050,7 +23722,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "db1cdbb2-a153-404f-9859-927ee7a30de3")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR09"
 			(at 41.91 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -24110,7 +23782,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR05")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -24127,7 +23799,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "db3a20b4-2590-41a3-a326-81b56005cc88")
-		(property "Reference" "C4"
+		(property "Reference" "C7"
 			(at 112.776 100.838 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24202,7 +23874,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C4")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -24299,7 +23971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dde80c4d-5e27-4124-b295-7a716e4f7421")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR039"
 			(at 184.15 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -24359,7 +24031,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR028")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -24377,7 +24049,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df8e957b-8da6-40b3-bc7c-2ebb6c3a4525")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR025"
 			(at 104.14 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -24437,7 +24109,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR024")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -24454,7 +24126,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e20ef1b9-5395-48bf-adad-163cbf19658e")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR032"
 			(at 121.92 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -24514,7 +24186,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR025")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -24531,7 +24203,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e231f8fa-14bc-4199-bed1-6e67b19da4f2")
-		(property "Reference" "C11"
+		(property "Reference" "C16"
 			(at 283.21 19.304 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24606,7 +24278,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C11")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -24717,7 +24389,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "eafcd734-aad8-4dd2-b759-907c3a624dc7")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR058"
 			(at 293.37 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -24777,7 +24449,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR039")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -24901,7 +24573,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee8dc538-dc12-47ae-a3ae-71e5b5d7696d")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR051"
 			(at 278.13 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -24961,7 +24633,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR033")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -24999,7 +24671,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN50P500X500X90-33N"
+		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm_ThermalVias"
 			(at 82.55 171.12 0)
 			(hide yes)
 			(show_name no)
@@ -25248,7 +24920,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f6baf8b4-7d2f-4fa5-9fe5-27c73283b83d")
-		(property "Reference" "C27"
+		(property "Reference" "C4"
 			(at 100.076 195.834 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25323,7 +24995,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C27")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -25340,7 +25012,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fbd9666a-dd7b-47d8-a060-d86823e6dfa7")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR070"
 			(at 394.97 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -25400,7 +25072,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "#PWR060")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -25417,7 +25089,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ffcc5dad-708d-424e-9ed3-fb3338d14fbc")
-		(property "Reference" "C16"
+		(property "Reference" "C21"
 			(at 318.77 66.294 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25492,7 +25164,7 @@
 		(instances
 			(project "OpenVault"
 				(path "/2a04cc58-1d87-4dc6-ad01-4a119bc48a11"
-					(reference "C16")
+					(reference "C21")
 					(unit 1)
 				)
 			)

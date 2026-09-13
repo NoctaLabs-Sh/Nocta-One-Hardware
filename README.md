@@ -41,6 +41,31 @@ Open `Hardware/OpenVault.kicad_pro` in KiCad 8 or later, or start with
 `Hardware/Schematic.pdf` if you just want to read it. The fabrication packages
 under `Hardware/production/` are what actually went to the board house.
 
+## Use of AI
+
+AI assistance, primarily Anthropic's Claude, is used in the development of this
+hardware.
+
+Its role is limited to review and analysis: reading datasheets and verifying pin
+assignments and component values against them, reviewing the schematic and the
+board layout, triaging ERC and DRC output, maintaining helper scripts, and
+drafting documentation.
+
+Component selection, the board stackup, the USB differential pair impedance and
+all security related decisions are made by the maintainers. No AI system commits
+to this repository, and every change is reviewed by a maintainer before it
+reaches `main`.
+
+No part of this design has been validated by an AI system, and maintainer review
+does not amount to electrical or security qualification. The design should be
+read against the component datasheets and verified independently before
+fabrication or use. The warranty and liability disclaimers in the licence apply
+in full.
+
+Contributions developed with AI assistance are accepted, provided the use is
+disclosed in the pull request and the contributor can account for the work
+submitted.
+
 ## Telling us we are wrong
 
 Open an issue. A mistake found in the schematic now is worth more to us than
